@@ -163,7 +163,6 @@ def menu():
 
     logo()
     print(" %s\x1b[1;92m[\x1b[1;93m*\x1b[1;92m] \x1b[1;93mAuthor      \x1b[1;97m: \x1b[1;93mBINTANG-XD"%(N))
-    print(" \x1b[1;92m[\x1b[1;93m*\x1b[1;92m] \x1b[1;93mVersion.    \x1b[1;97m: 3.74
     print(" \x1b[1;92m[\x1b[1;93m*\x1b[1;92m] \x1b[1;93mGithub      \x1b[1;97m: \x1b[1;93mhttps://github.com/bot-85")
     print(" \x1b[1;92m[\x1b[1;93m*\x1b[1;92m] \x1b[1;97m+\x1b[1;93m---------------------------------------------\x1b[1;97m+")
     print(" \x1b[1;92m[\x1b[1;93m*\x1b[1;92m] \x1b[1;93mBergabung   \x1b[1;97m: %s\x1b[1;93m"%(tgl))
