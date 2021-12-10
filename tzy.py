@@ -437,7 +437,8 @@ def uas():
 			exit ("\x1b[1;91m [!] "+er) 
     elif u in("2","02"):
         try:
-        	ua_ = open('data/ua.txt', 'r').read();jeda(2);print ("%s [%s*%s] user agent anda : %s%s"%(P,K,P,H,ua_));jeda(2);raw_input("\n%s [ %senter%s ] "%(P,K,P));menu()
+        	ua_ = 
+                open("data/ua.txt","w").write(ua_)print ("%s [%s*%s] user agent anda : %s%s"%(P,K,P,H,ua_));jeda(2);raw_input("\n%s [ %senter%s ] "%(P,K,P));menu()
         except IOError:
         	ua_ = '%s-'%(M)
     elif u in("0","00"):
