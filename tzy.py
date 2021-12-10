@@ -407,7 +407,7 @@ def info_tools():
     print '\n %s[%s#%s]'%(N,O,N), 52 * '\x1b[1;92m-\x1b[0m';time.sleep(0.07)
     raw_input('\n  [ %sKEMBALI%s ] '%(O,N));menu()
 
-####GANTI USER AGENT####
+# GANTI USER AGENT
 def useragent():
 	print ("\n%s [%s01%s] Ganti user agent "%(P,O,P))
 	print (" [%s02%s] Cek user agent "%(O,P))
@@ -418,7 +418,7 @@ def uas():
     if u == '':
         print("%s [!] Isi yang benar kentod "%(M));jeda(2);uas()
     elif u in("1","01"):
-    	print (" %s[%s*%s] ketik %sMy user agent%s di browser, google, chrome\n [%s*%s] untuk gunakan user agent anda sendiri"%(P,K,P,H,P,K,P))
+    	print (" %s[%s*%s] ketik %sMy user agent%s di browser google chrome\n [%s*%s] untuk gunakan user agent anda sendiri"%(P,K,P,H,P,K,P))
     	print (" [%s*%s] ketik %sdefault%s untuk gunakan user agent bawaan tools"%(K,P,H,P))
     	try:
     	    ua = raw_input("%s [?] user agent : %s"%(P,K))
@@ -428,7 +428,7 @@ def uas():
             	jalan("%s [!]  Anda akan di arahkan ke browser "%(H));jeda(2)
             	os.system("am start https://www.google.com/search?q=My+user+agent>/dev/null");jeda(2);useragent()
             elif ua in("default","Default","DEFAULT"):
-                ua = ''
+                ua = 'Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]'
                 open("data/ua.txt","w").write(ua_)
                 print ("\n%s [√] menggunakan user agent bawaan"%(H));jeda(2);menu()
             open("data/ua.txt","w").write(ua);jeda(2)
@@ -436,14 +436,13 @@ def uas():
         except KeyboardInterrupt as er:
 			exit ("\x1b[1;91m [!] "+er) 
     elif u in("2","02"):
-        try:os.mkdir('hasil')
-	except:pass
-	try:os.mkdir('data')
-	except:pass
-	try:
-		ua_ = ''
-		open("data/ua.txt","w").write(ua_)
-
+        try:
+        	ua_ = open('data/ua.txt', 'r').read();jeda(2);print ("%s [%s*%s] user agent anda : %s%s"%(P,K,P,H,ua_));jeda(2);raw_input("\n%s [ %senter%s ] "%(P,K,P));menu()
+        except IOError:
+        	ua_ = '%s-'%(M)
+    elif u in("0","00"):
+    	menu()
+    else:
         print("%s [!] Isi yang benar kentod "%(M));jeda(2);uas()
 
 ### CEK OPSI ###
