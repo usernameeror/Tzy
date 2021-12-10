@@ -202,7 +202,7 @@ def menu():
     elif asw == "7":
     	cekhasil()
     elif asw == "8":
-    	useragent()
+    	seting_yntkts()
     elif asw == "9":
         info_tools()
     elif asw == "0":
@@ -407,44 +407,43 @@ def info_tools():
     print '\n %s[%s#%s]'%(N,O,N), 52 * '\x1b[1;92m-\x1b[0m';time.sleep(0.07)
     raw_input('\n  [ %sKEMBALI%s ] '%(O,N));menu()
 
-# GANTI USER AGENT
-def useragent():
-	print ("\n%s [%s01%s] Ganti user agent "%(P,O,P))
-	print (" [%s02%s] Cek user agent "%(O,P))
-	print (" [%s00%s] Kembali "%(M,P))
-	uas()
-def uas():
-    u = raw_input('\n%s [?] pilih :%s '%(P,K))
-    if u == '':
-        print("%s [!] Isi yang benar kentod "%(M));jeda(2);uas()
-    elif u in("1","01"):
-    	print (" %s[%s*%s] ketik %sMy user agent%s di browser google chrome\n [%s*%s] untuk gunakan user agent anda sendiri"%(P,K,P,H,P,K,P))
-    	print (" [%s*%s] ketik %sdefault%s untuk gunakan user agent bawaan tools"%(K,P,H,P))
-    	try:
-    	    ua = raw_input("%s [?] user agent : %s"%(P,K))
-            if ua in(""):
-            	print("%s [!] Isi yang benar kentod "%(M));jeda(2);menu()
-            elif ua in("my user agent","My User Agent","MY USER AGENT","My user agent"):
-            	jalan("%s [!]  Anda akan di arahkan ke browser "%(H));jeda(2)
-            	os.system("am start https://www.google.com/search?q=My+user+agent>/dev/null");jeda(2);useragent()
-            elif ua in("default","Default","DEFAULT"):
-                ua = 'Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]'
-                open("data/ua.txt","w").write(ua_)
-                print ("\n%s [√] menggunakan user agent bawaan"%(H));jeda(2);menu()
-            open("data/ua.txt","w").write(ua);jeda(2)
-            print ("\n%s [√] berhasil mengganti user agent"%(H));jeda(2);menu()
-        except KeyboardInterrupt as er:
-			exit ("\x1b[1;91m [!] "+er) 
-    elif u in("2","02"):
+### ganti user agent
+def seting_yntkts():
+    print '\n (%s1%s) ganti user agent'%(O,N)
+    print ' (%s2%s) check user agent'%(O,N)
+    ytbjts = raw_input('\n %s[%s?%s] choose : '%(N,O,N))
+    if ytbjts == '':
+        print '\n %s[%s×%s] Gak boleh kosong Kentod'%(N,M,N);time.sleep(2);seting_yntkts()
+    elif ytbjts in['1','01']:
+        yo_ndak_tau_ko_tanya_saia()
+    elif ytbjts in['2','02']:
         try:
-        	ua_ = open('data/ua.txt', 'r').read();jeda(2);print ("%s [%s*%s] user agent anda : %s%s"%(P,K,P,H,ua_));jeda(2);raw_input("\n%s [ %senter%s ] "%(P,K,P));menu()
+            user_agent = open('YNTKTS.txt', 'r').read()
         except IOError:
-                open("data/ua.txt","w").write(ua_)
-        	ua_ = '%s-'%(M)
-    elif u in("0","00"):
-    	menu()
+            user_agent = '%s-'%(M)
+        print '\n %s[%s+%s] User Agent anda : %s%s'%(N,O,N,H,user_agent)
+        raw_input('\n  %s[ %skembali%s ]'%(N,O,N));moch_yayan()
     else:
-        print("%s [!] Isi yang benar kentod "%(M));jeda(2);uas()
+        print '\n %s[%s×%s] input yang bener'%(N,M,N);time.sleep(2);seting_yntkts()
+# User Agent baru
+def yo_ndak_tau_ko_tanya_saia():
+    os.system('rm -rf YNTKTS.txt')
+    _asu_ = raw_input('\n [%s?%s] ingin menggunakan user agent hp anda [Y/t]: '%(O,N))
+    if _asu_ == '':
+        print '\n %s[%s×%s] Gak boleh kosong Kentod'%(N,M,N);yo_ndak_tau_ko_tanya_saia()
+    elif _asu_ in['Y','y']:
+        jalan('\n %s *%s anda akan di arakan ke situs web setelah di arahkan ke situs web.\n  %s*%s klik ikon %sMY USER AGENT%s lalu copy semua user agent anda...'%(O,N,O,N,H,N));time.sleep(2);os.system('xdg-open https://www.yayanxd.my.id/server')
+        _agen_ = raw_input(' [%s?%s] masukan user agent hp anda :%s '%(O,N,H))
+        open('YNTKTS.txt', 'w').write(_agen_);time.sleep(2)
+        jalan('\n %s[%s✓%s] berhasil menggunakan user agent hp anda...'%(N,H,N))
+        raw_input('\n  %s[ %skembali%s ]'%(N,O,N));moch_yayan()
+    elif _asu_ in['T','t']:
+        _agen_ = raw_input(' [%s?%s] masukan user agent :%s '%(O,N,H))
+        open('YNTKTS.txt', 'w').write(_agen_);time.sleep(2)
+        jalan('\n %s[%s✓%s] berhasil mengganti user agent...'%(N,H,N))
+        raw_input('\n  %s[ %skembali%s ]'%(N,O,N));moch_yayan()
+    else:
+        print '\n %s[%s!%s] Y/t ngentod'%(N,M,N);yo_ndak_tau_ko_tanya_saia()
 
 ### CEK OPSI ###
 def cekopsi():
