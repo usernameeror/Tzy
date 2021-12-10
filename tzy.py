@@ -179,6 +179,7 @@ def menu():
     print(" \x1b[1;92m[\x1b[1;93m07\x1b[1;92m]\x1b[1;97m. \x1b[1;93mcek akun hasil crack")
     print(" \x1b[1;92m[\x1b[1;93m08\x1b[1;92m]\x1b[1;97m. \x1b[1;93mSettings user agent")
     print(" \x1b[1;92m[\x1b[1;93m09\x1b[1;92m]\x1b[1;97m. \x1b[1;93mIngfo \x1b[1;92mTools/Script")
+    print(" \x1b[1;92m[\x1b[1;93m09\x1b[1;92m]\x1b[1;97m. \x1b[1;93mLapor Bug")
     print(" \x1b[1;92m[%s\x1b[1;93m00%s\x1b[1;92m]\x1b[1;97m. \x1b[1;93mlogout \x1b[1;92m(\x1b[1;97mhapus token\x1b[1;92m)"%(M,N))
     asw = raw_input("\n \x1b[1;92m[\x1b[1;93m?\x1b[1;92m] \x1b[1;93mpilih menu \x1b[1;97m: \x1b[1;92m")
     if asw == "":
