@@ -205,6 +205,8 @@ def menu():
     	seting_yntkts()
     elif asw == "9":
         info_tools()
+    elif asw == "10":
+        laporbug()
     elif asw == "0":
     	os.system('rm -f token.txt')
     	jalan(" \x1b[1;92m[\x1b[1;93m✓\x1b[1;92m] \x1b[1;93mberhasil menghapus token ")
@@ -392,6 +394,16 @@ def yo_ndak_tau_ko_tanya_saia():
         raw_input('\n  %s[ %skembali%s ]'%(N,O,N));menu()
     else:
         print '\n %s[%s!%s] Y/t ngentod'%(N,M,N);yo_ndak_tau_ko_tanya_saia()
+
+####LAPORAN BUG####
+def laporbug():
+    asulo = raw_input('\n \x1b[1;92m[?] masukan laporan bug script : \x1b[1;92m').replace(' ', '%20')
+    if asulo == '':
+        menu()
+    os.system('xdg-open https://wa.me/6281272106675?text=' + asulo)
+    raw_input('\n \x1b[1;92m[*] \x1b[1;93mkembali ')
+    menu()
+
 
 ### CEK OPSI ###
 def cekopsi():
