@@ -163,7 +163,7 @@ def menu():
 
     logo()
     print ''
-    print(" \x1b[1;93m[+] Author      : \x1b[1;92mBINTANG-XD)
+    print(" \x1b[1;93m[+] Author      : \x1b[1;92mBINTANG-XD
     print(" \x1b[1;93m[+] Version     : \x1b[1;92m5.3)
     print(" \x1b[1;93m[+] YouTube     : \x1b[1;92mBINTANG XD)
     print(" \x1b[1;93m[+] ======================================================)
