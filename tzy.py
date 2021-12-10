@@ -443,7 +443,6 @@ def uas():
 	try:
 		ua_ = ''
 		open("data/ua.txt","w").write(ua_)
-    else:
 
         print("%s [!] Isi yang benar kentod "%(M));jeda(2);uas()
 
