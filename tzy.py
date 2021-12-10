@@ -81,16 +81,14 @@ def jalan(z):
 ### BAGIAN LOGO ###
 def logo():
 	os.system("clear")
-	print("""
-\x1b[1;93m•\x1b[1;92mFuck \x1b[1;97m- \x1b[1;92mMulti Brute Force\x1b[1;93m•\x1b[1;93m•\x1b[1;93m•\x1b[1;93m•\x1b[1;93m•\x1b[1;93m•\x1b[1;93m•\x1b[1;93m•\x1b[1;93m•\x1b[1;93m•\x1b[1;93m•\x1b[1;93m•\x1b[1;93m•\x1b[1;93m•\x1b[1;93m•\x1b[1;93m•\x1b[1;93m•\x1b[1;93m•\x1b[1;93m•\x1b[1;93m•\x1b[1;93m•\x1b[1;93m•\x1b[1;93m•\x1b[1;93m•\x1b[1;93m•\x1b[1;93m•\x1b[1;93m•
-\x1b[1;93m•\x1b[1;91m ___________          _____ _____________________ \x1b[1;93m•
-\x1b[1;93m•\x1b[1;92m \_   _____/         /     \\______   \_   _____/  \x1b[1;93m•
-\x1b[1;93m•\x1b[1;93m  |    __)  ______  /  \ /  \|    |  _/|    __)   \x1b[1;93m•
-\x1b[1;93m•\x1b[1;94m  |     \  /_____/ /    Y    \    |   \|     \    \x1b[1;93m•
-\x1b[1;93m•\x1b[1;95m  \___  /          \____|__  /______  /\___  /    \x1b[1;93m•    
-\x1b[1;93m•\x1b[1;96m      \/                   \/       \/     \/     \x1b[1;93m•
-\x1b[1;93m•\x1b[1;93m•\x1b[1;93m•\x1b[1;93m•\x1b[1;93m•\x1b[1;93m•\x1b[1;93m•\x1b[1;93m•\x1b[1;93m•\x1b[1;93m•\x1b[1;93m•\x1b[1;93m•\x1b[1;93m•\x1b[1;93m•\x1b[1;93m•\x1b[1;93m•\x1b[1;93m•\x1b[1;93m•\x1b[1;93m•\x1b[1;93m•\x1b[1;93m•\x1b[1;93m•\x1b[1;93m•\x1b[1;93m•\x1b[1;93m•\x1b[1;93m•\x1b[1;93m•\x1b[1;92mFuck \x1b[1;97m- \x1b[1;92mMulti Brute Force\x1b[1;93m•""")
-   
+	print("""%s
+\x1b[1;91m ___________          _____ _____________________
+\x1b[1;92m \_   _____/         /     \\______   \_   _____/
+\x1b[1;93m  |    __)  ______  /  \ /  \|    |  _/|    __)  
+\x1b[1;94m  |     |  /_____/ /    Y    \    |   \|     \   
+\x1b[1;95m  \___  |          \____|__  /______  /\___  /   
+\x1b[1;96m      \/                   \/       \/     \/      """%(N))
+
 ### BAGIAN LOGIN ###
 def tokenz():
 	os.system('clear')
@@ -100,8 +98,8 @@ def tokenz():
 	except (KeyError, IOError):
 		os.system('clear')
 		logo()
-		print(" %s\x1b[1;92m[\x1b[1;93m*\x1b[1;92m] \x1b[1;93mAuthor      \x1b[1;97m: \x1b[1;93mNdriiTzy X YogzzTzy X EzaaTzy X FaissTzy."%(N))
-		print(" \x1b[1;92m[\x1b[1;93m*\x1b[1;92m] \x1b[1;93mGithub      \x1b[1;97m: \x1b[1;93mhttps://github.com/YumasaaTzy")
+		print(" %s\x1b[1;92m[\x1b[1;93m*\x1b[1;92m] \x1b[1;93mAuthor      \x1b[1;97m: \x1b[1;93mBINTANG-XD"%(N))
+		print(" \x1b[1;92m[\x1b[1;93m*\x1b[1;92m] \x1b[1;93mGithub      \x1b[1;97m: \x1b[1;93mhttps://github.com/bot-85")
 		print(" \x1b[1;92m[\x1b[1;93m*\x1b[1;92m] \x1b[1;97m+\x1b[1;93m---------------------------------------------\x1b[1;97m+")
 		print(" \x1b[1;92m[\x1b[1;93m*\x1b[1;92m] \x1b[1;93mBergabung   \x1b[1;97m: %s\x1b[1;93m"%(tgl))
 		print(" \x1b[1;92m[\x1b[1;93m*\x1b[1;92m] \x1b[1;93mStatus      \x1b[1;97m: %s\x1b[1;92mPremium Donk%s"%(H,N))
