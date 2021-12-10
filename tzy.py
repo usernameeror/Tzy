@@ -162,13 +162,16 @@ def menu():
         exit(" %s\x1b[1;92m[\x1b[1;93m!\x1b[1;92m] \x1b[1;93manda tidak terhubung ke internet\x1b[1;97m!"%(M))
 
     logo()
-    print(" %s\x1b[1;92m[\x1b[1;93m*\x1b[1;92m] \x1b[1;93mAuthor     \x1b[1;97m: \x1b[1;93mNdriiTzy X YogzzTzy X EzaaTzy X FaissTzy."%(N))
-    print(" \x1b[1;92m[\x1b[1;93m*\x1b[1;92m] \x1b[1;93mGithub     \x1b[1;97m: \x1b[1;93mhttps://github.com/YumasaaTzy")
-    print(" \x1b[1;92m[\x1b[1;93m*\x1b[1;92m] \x1b[1;97m+\x1b[1;93m--------------------------------------------\x1b[1;97m+")
-    print(" \x1b[1;92m[\x1b[1;93m*\x1b[1;92m] \x1b[1;93mBergabung  \x1b[1;97m: %s\x1b[1;93m"%(tgl))
-    print(" \x1b[1;92m[\x1b[1;93m*\x1b[1;92m] \x1b[1;93mStatus     \x1b[1;97m: %s\x1b[1;92mPremium Donk%s"%(H,N))
-    print(" \x1b[1;92m[\x1b[1;93m*\x1b[1;92m] \x1b[1;97m+\x1b[1;93m--------------------------------------------\x1b[1;97m+")
-    print(" \x1b[1;92m[\x1b[1;93m*\x1b[1;92m] \x1b[1;93mIP         \x1b[1;97m: %s\x1b[1;93m"%(IP))
+    print ''
+    print ' \x1b[1;93m[+] Author      : \x1b[1;92mBINTANG-XD'
+    print ' \x1b[1;93m[+] Version     : \x1b[1;92m5.3'
+    print ' \x1b[1;93m[+] YouTube     : \x1b[1;92mBINTANG XD'
+    print ' \x1b[1;93m[+] ======================================================'
+    print ' \x1b[1;93m[+] Bergabung   : \x1b[1;92m%s' % tgl
+    print ' \x1b[1;93m[+] Status      : ' + H + 'Premium dong'
+    print ' \x1b[1;93m[+] ======================================================'
+    print ' \x1b[1;93m[+] ID          : \x1b[1;92m' + id
+    print ' \x1b[1;93m[+] IP          : \x1b[1;92m' + ip
     print("\n \x1b[1;92m[ \x1b[1;93mselamat datang %s%s%s \x1b[1;92m]\n"%(K,nama,N))
     print(" \x1b[1;92m[\x1b[1;93m01\x1b[1;92m]\x1b[1;97m. \x1b[1;93mcrack dari id publik")
     print(" \x1b[1;92m[\x1b[1;93m02\x1b[1;92m]\x1b[1;97m. \x1b[1;93mcrack dari id massal")
