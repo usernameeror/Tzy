@@ -163,15 +163,15 @@ def menu():
 
     logo()
     print ''
-    print ' \x1b[1;93m[+] Author      : \x1b[1;92mBINTANG-XD'
-    print ' \x1b[1;93m[+] Version     : \x1b[1;92m5.3'
-    print ' \x1b[1;93m[+] YouTube     : \x1b[1;92mBINTANG XD'
-    print ' \x1b[1;93m[+] ======================================================'
-    print ' \x1b[1;93m[+] Bergabung   : \x1b[1;92m%s' % tgl
-    print ' \x1b[1;93m[+] Status      : ' + H + 'Premium dong'
-    print ' \x1b[1;93m[+] ======================================================'
-    print ' \x1b[1;93m[+] ID          : ' + id
-    print ' \x1b[1;93m[+] IP          : ' + ip
+    print(" \x1b[1;93m[+] Author      : \x1b[1;92mBINTANG-XD'
+    print(" \x1b[1;93m[+] Version     : \x1b[1;92m5.3'
+    print(" \x1b[1;93m[+] YouTube     : \x1b[1;92mBINTANG XD'
+    print(" \x1b[1;93m[+] ======================================================'
+    print(" \x1b[1;93m[+] Bergabung   : \x1b[1;92m%s' % tgl
+    print(" \x1b[1;93m[+] Status      : ' + H + 'Premium dong'
+    print(" \x1b[1;93m[+] ======================================================'
+    print(" \x1b[1;93m[+] ID          : ' + id
+    print(" \x1b[1;93m[+] IP          : ' + ip
     print("\n \x1b[1;92m[ \x1b[1;93mselamat datang %s%s%s \x1b[1;92m]\n"%(K,nama,N))
     print(" \x1b[1;92m[\x1b[1;93m01\x1b[1;92m]\x1b[1;97m. \x1b[1;93mcrack dari id publik")
     print(" \x1b[1;92m[\x1b[1;93m02\x1b[1;92m]\x1b[1;97m. \x1b[1;93mcrack dari id massal")
