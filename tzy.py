@@ -167,6 +167,7 @@ def menu():
     print(" \x1b[1;92m[\x1b[1;93m05\x1b[1;92m]\x1b[1;97m. \x1b[1;93mcek opsi hasil crack")
     print(" \x1b[1;92m[\x1b[1;93m06\x1b[1;92m]\x1b[1;97m. \x1b[1;93mcek akun hasil crack")
     print(" \x1b[1;92m[\x1b[1;93m07\x1b[1;92m]\x1b[1;97m. \x1b[1;93mSettings user agent")
+    print(" \x1b[1;92m[\x1b[1;93m08\x1b[1;92m]\x1b[1;97m. \x1b[1;93mIngfo Tools/Script")
     print(" \x1b[1;92m[%s\x1b[1;93m00%s\x1b[1;92m]\x1b[1;97m. \x1b[1;93mlogout \x1b[1;92m(\x1b[1;97mhapus token\x1b[1;92m)"%(M,N))
     asw = raw_input("\n \x1b[1;92m[\x1b[1;93m?\x1b[1;92m] \x1b[1;93mpilih menu \x1b[1;97m: \x1b[1;92m")
     if asw == "":
@@ -324,15 +325,15 @@ def cekhasil():
 ####INFO TOOLS####
 def info_tools():
     os.system('clear')
-    print ' %s[%s#%s]'%(N,O,N), 52 * '\x1b[1;96m-\x1b[0m';time.sleep(0.07)
-    print '\n %s[%s>%s] Yt       : Yayan XD.'%(N,H,N);time.sleep(0.07)
-    print '\n %s[%s>%s] Author   : Moch Yayan Juan Alvredo XD.'%(N,H,N);time.sleep(0.07)
-    print '\n %s[%s>%s] Github   : https://github.com/Yayan-XD'%(N,H,N);time.sleep(0.07)
-    print '\n %s[%s>%s] Facebook : https://www.facebook.com/KM39453'%(N,H,N);time.sleep(0.07)
-    print '\n %s[%s>%s] Fanspage : https://www.facebook.com/Yayanxyz'%(N,H,N);time.sleep(0.07)
-    print '\n %s[%s>%s] Instagram: https://www.instagram.com/yayanxd_'%(N,H,N);time.sleep(0.07)
-    print '\n %s[%s>%s] Website  : https://www.yayanxd.my.id'%(N,H,N);time.sleep(0.07)
-    print '\n %s[%s#%s]'%(N,O,N), 52 * '\x1b[1;96m-\x1b[0m';time.sleep(0.07)
+    print ' %s[%s#%s]'%(N,O,N), 52 * '\x1b[1;92m-\x1b[0m';time.sleep(0.07)
+    print '\n %s[\x1b[1;93m%s>%s\x1b[1;92m] Yt       \x1b[1;93m: Bintang XD.'%(N,H,N);time.sleep(0.07)
+    print '\n %s[\x1b[1;93m%s>%s\x1b[1;92m] Author   \x1b[1;93m: BINTANG-XD.'%(N,H,N);time.sleep(0.07)
+    print '\n %s[\x1b[1;93m%s>%s\x1b[1;92m] Github   \x1b[1;93m: https://github.com/bot-85'%(N,H,N);time.sleep(0.07)
+    print '\n %s[\x1b[1;93m%s>%s\x1b[1;92m] Facebook \x1b[1;93m: Bintang Tzy'%(N,H,N);time.sleep(0.07)
+    print '\n %s[\x1b[1;93m%s>%s\x1b[1;92m] Link FB  \x1b[1;93m: https://www.facebook.com/bintangt.zy.92'%(N,H,N);time.sleep(0.07)
+    print '\n %s[\x1b[1;93m%s>%s\x1b[1;92m] Ig       \x1b[1;93m: Ndak punya'%(N,H,N);time.sleep(0.07)
+    print '\n %s[\x1b[1;93m%s>%s\x1b[1;92m] Catatan  \x1b[1;93m: Please support my github, brothers and sisters'%(N,H,N);time.sleep(0.07)
+    print '\n %s[%s#%s]'%(N,O,N), 52 * '\x1b[1;92m-\x1b[0m';time.sleep(0.07)
     raw_input('\n  [ %sKEMBALI%s ] '%(O,N));menu()
 
 ####GANTI USER AGENT####
