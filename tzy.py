@@ -189,6 +189,8 @@ def menu():
     	cekhasil()
     elif asw == "7":
     	gantiua()
+    elif asw == "8":
+        info_tools()
     elif asw == "0":
     	os.system('rm -f token.txt')
     	jalan(" \x1b[1;92m[\x1b[1;93m✓\x1b[1;92m] \x1b[1;93mberhasil menghapus token ")
@@ -318,6 +320,20 @@ def cekhasil():
 		menu()
 	else:
 		menu()
+
+####INFO TOOLS####
+def info_tools():
+    os.system('clear')
+    print ' %s[%s#%s]'%(N,O,N), 52 * '\x1b[1;96m-\x1b[0m';time.sleep(0.07)
+    print '\n %s[%s>%s] Yt       : Yayan XD.'%(N,H,N);time.sleep(0.07)
+    print '\n %s[%s>%s] Author   : Moch Yayan Juan Alvredo XD.'%(N,H,N);time.sleep(0.07)
+    print '\n %s[%s>%s] Github   : https://github.com/Yayan-XD'%(N,H,N);time.sleep(0.07)
+    print '\n %s[%s>%s] Facebook : https://www.facebook.com/KM39453'%(N,H,N);time.sleep(0.07)
+    print '\n %s[%s>%s] Fanspage : https://www.facebook.com/Yayanxyz'%(N,H,N);time.sleep(0.07)
+    print '\n %s[%s>%s] Instagram: https://www.instagram.com/yayanxd_'%(N,H,N);time.sleep(0.07)
+    print '\n %s[%s>%s] Website  : https://www.yayanxd.my.id'%(N,H,N);time.sleep(0.07)
+    print '\n %s[%s#%s]'%(N,O,N), 52 * '\x1b[1;96m-\x1b[0m';time.sleep(0.07)
+    raw_input('\n  [ %sKEMBALI%s ] '%(O,N));moch_yayan()
 
 ####GANTI USER AGENT####
 def gantiua():
